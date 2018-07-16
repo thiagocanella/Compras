@@ -1,0 +1,13 @@
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras\bin\Debug\netstandard2.0\Compras.deps.json
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras\bin\Debug\netstandard2.0\Compras.dll
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras\bin\Debug\netstandard2.0\Compras.pdb
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras\obj\Debug\netstandard2.0\ListsView.xaml.g.cs
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras\obj\Debug\netstandard2.0\Compras.csproj.CoreCompileInputs.cache
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras\obj\Debug\netstandard2.0\Compras.AssemblyInfoInputs.cache
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras\obj\Debug\netstandard2.0\Compras.AssemblyInfo.cs
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras\obj\Debug\netstandard2.0\Compras.dll
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras\obj\Debug\netstandard2.0\Compras.pdb
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras\obj\Debug\netstandard2.0\Compras.csprojAssemblyReference.cache
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras\obj\Debug\netstandard2.0\ItemsView.xaml.g.cs
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras\obj\Debug\netstandard2.0\XamlC.stamp
