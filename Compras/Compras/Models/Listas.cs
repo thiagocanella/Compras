@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
@@ -7,31 +8,49 @@ namespace Compras.Models
 {
     public class Listas : INotifyPropertyChanged
     {
-        public Listas() {}
+        public Listas() { }
+        public event PropertyChangedEventHandler PropertyChanged;
 
-        private string nomeLista;
-        private string criacao;
-        public string Criacao
-        {
-            get { return criacao; }
+        public DateTime Criacao {
+            get
+            {
+                return Cria;
+            }
             set
             {
-                criacao = value;
-                this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(criacao)));
+                Cria = value;
+            }
+            }
 
+        public string CriacaoFormated
+        {
+            get { return Cria.ToString("dd/MM/yyyy"); }
+        }
+
+        public DateTime DiaCompra
+        {
+            get
+            {
+                return Dia;
+            }
+            set
+            {
+                Dia = value;
             }
         }
 
 
 
-        public string NomeLista
-        {
-            get { return nomeLista; }
-            set { nomeLista = value; this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(nomeLista))); } 
 
-        }
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+        public string NomeLista { get; set; }
+        private DateTime Dia { get; set; }
+        private DateTime Cria { get; set; }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+
+
+
 
     }
 }

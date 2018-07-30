@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Compras.PopupLista"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             >
+
+
+  <StackLayout Margin="18"
+               Padding="36"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               HeightRequest="400"
+               WidthRequest="400">
+    <StackLayout BackgroundColor="#666" Orientation="Vertical" Padding="20">
+
+
+      <StackLayout>
+                <Entry Placeholder="Digite o nome da lista" PlaceholderColor="Gray" Text="{Binding NovaLista}" TextColor="WhiteSmoke" x:Name="inputName"/>
+      </StackLayout>
+      
+      
+      <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+        <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+
+          <Label Text ="Data da Compra" TextColor="WhiteSmoke"  VerticalOptions="Center"/>
+        </StackLayout>
+        
+        <StackLayout HorizontalOptions="End" VerticalOptions="Center">
+        <DatePicker Date="{Binding DiadaCompra}" MinimumDate="{Binding Hoje}" MaximumDate="{Binding DaquiUmAno}" HorizontalOptions="End" VerticalOptions="Center"/>
+        </StackLayout>
+      </StackLayout>
+
+      <StackLayout BackgroundColor="#666" Orientation="Horizontal" HorizontalOptions="Center">
+        <Button Text="+ Lista" HorizontalOptions="Center" BackgroundColor="CornflowerBlue"
+            TextColor="White" FontAttributes="Bold" Command="{Binding AdicionarLista}" Clicked="AddClicked"/>
+      </StackLayout>
+
+    </StackLayout>
+  </StackLayout>
+</pages:PopupPage>

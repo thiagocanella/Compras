@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
-    <Jar>obj\Release\lp\1\jl\formsviewgroup.jar</Jar>
-    <Jar>obj\Release\lp\6\jl\arch-core-common.jar</Jar>
-    <Jar>obj\Release\lp\7\jl\arch-lifecycle-common.jar</Jar>
-    <Jar>obj\Release\lp\10\jl\support-annotations.jar</Jar>
     <Jar>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\1\jl\formsviewgroup.jar</Jar>
     <Jar>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\10\jl\support-annotations.jar</Jar>
     <Jar>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\11\jl\bin\classes.jar</Jar>
@@ -27,6 +23,14 @@
     <Jar>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\9\jl\bin\classes.jar</Jar>
   </Jars>
   <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\31\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\49\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\51\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\37\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\38\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\39\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\40\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\41\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\11\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\14\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\16\jl\res</ResolvedResourceDirectory>
@@ -38,10 +42,26 @@
     <ResolvedResourceDirectory>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\23\jl\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\Release\lp\31\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\49\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\51\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\37\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\38\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\39\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\40\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\41\jl\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Release\lp\18\jl\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\31.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\49.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\51.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\37.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\38.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\39.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\40.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\41.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\11.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\14.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Release\lp\16.stamp</ResolvedResourceDirectoryStamp>

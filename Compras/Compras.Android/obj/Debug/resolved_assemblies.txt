@@ -9,7 +9,15 @@ C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\a
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\Newtonsoft.Json.dll
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\PCLExt.FileStorage.Abstractions.dll
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\PCLExt.FileStorage.dll
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\Plugin.CurrentActivity.dll
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\Plugin.Media.dll
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\Plugin.Permissions.dll
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\Plugin.Settings.dll
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\Refractored.Fab.dll
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\Refractored.FabControl.dll
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\Refractored.FabControl.Droid.dll
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\Rg.Plugins.Popup.dll
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\Rg.Plugins.Popup.Droid.dll
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\SQLite-net.dll
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\SQLiteNetExtensions.dll
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\SQLitePCLRaw.batteries_green.dll
@@ -17,6 +25,10 @@ C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\a
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\SQLitePCLRaw.core.dll
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\SQLitePCLRaw.lib.e_sqlite3.dll
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\Syncfusion.Licensing.dll
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\Syncfusion.SfNumericUpDown.Android.dll
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\Syncfusion.SfNumericUpDown.XForms.Android.dll
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\Syncfusion.SfNumericUpDown.XForms.dll
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\System.Core.dll
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\System.dll
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\System.IdentityModel.dll
@@ -80,5 +92,7 @@ C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\a
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\System.Globalization.dll
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\System.Resources.ResourceManager.dll
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\System.Text.RegularExpressions.dll
+C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\System.Text.Encoding.dll
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\Mono.Security.dll
 C:\Users\Thiago Canella\source\repos\Compras\Compras\Compras.Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll

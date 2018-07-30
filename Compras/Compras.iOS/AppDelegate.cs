@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Syncfusion.SfNumericUpDown.XForms.iOS;
 using UIKit;
 
 namespace Compras.iOS
@@ -22,7 +23,13 @@ namespace Compras.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
+
+            Rg.Plugins.Popup.Popup.Init();
+        
+            new SfNumericUpDownRenderer();
+        
+
+        global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

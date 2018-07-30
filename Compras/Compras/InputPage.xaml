@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="Compras.InputPage"
+              x:Name="BoasVindas"
+              xmlns:pages="clr-namespace:Compras">
+
+
+    <ContentPage BackgroundColor="#333">
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS, Android" Value="0,0,0,0" />
+            </OnPlatform>
+        </ContentPage.Padding>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#444" Padding="0,0,0,0" >
+            <Image Source="introscreen1.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Aspect="AspectFill"/>
+
+
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage BackgroundColor="#333">
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS, Android" Value="0,0,0,0" />
+            </OnPlatform>
+        </ContentPage.Padding>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#444" Padding="0,0,0,0" >
+            <Image Source="intro2.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Aspect="AspectFill"/>
+
+
+        </StackLayout>
+    </ContentPage>
+
+
+    <ContentPage>
+
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS, Android" Value="0,0,0,0" />
+            </OnPlatform>
+        </ContentPage.Padding>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#444" Padding="0,0,0,0" >
+            <Image Source="intro3.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"/>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage>
+
+
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS, Android" Value="0,0,0,0" />
+            </OnPlatform>
+        </ContentPage.Padding>
+        <StackLayout BackgroundColor="#333" VerticalOptions="FillAndExpand" Padding="20,20,20,20">
+            <StackLayout VerticalOptions="Start">
+            <Label Text="Conte mais sobre você" TextColor="White" FontSize="Large" VerticalOptions="Start"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand" Padding="20,20,20,20">
+                <Entry Placeholder=" Seu Nome" Text="{Binding UserName}"  PlaceholderColor="#999" TextColor="#AAA" VerticalOptions="Center" x:Name="nomeUser" />
+                <Entry Placeholder=" seu@email.com" Keyboard="Email" PlaceholderColor="#999" Text="{Binding UserEmail}" TextColor="#AAA" VerticalOptions="Center" x:Name="emailUser" />
+            </StackLayout>
+            <StackLayout VerticalOptions="End" Padding="40,40,40,40">
+                <Button Text="Continuar" Command="{Binding RegisterCommand}"  HorizontalOptions="FillAndExpand" BackgroundColor="CornflowerBlue" 
+                    TextColor="White" FontAttributes="Bold" x:Name="Continuar"/>
+            </StackLayout>
+                     
+        
+        </StackLayout>
+
+        
+
+    </ContentPage>
+
+
+
+
+
+</CarouselPage>

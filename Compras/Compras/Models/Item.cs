@@ -1,36 +1,48 @@
-﻿using System;
+﻿using Acr.UserDialogs;
+using SQLite;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace Compras.Models
 {
     public class Item : INotifyPropertyChanged
 
     {
-
         public Item() { }
-        private string nomeitem;
-        private bool pegou;
-        private string id;
 
-
-        public string ID
-        {
-            get { return id; }
-            set { id = value; this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(id))); }
-        }
-
-        public string Nome
-        {
-            get { return nomeitem; }
-            set { nomeitem = value; this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(nomeitem))); }
-        }
-        public bool Pegou { get { return pegou; }
-            set { pegou = value; this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(pegou))); }
-        }
         public event PropertyChangedEventHandler PropertyChanged;
 
+
+        public int Qnt
+        {
+            get
+            { return Quantidade; }
+            set
+            {
+                if (value == 0)
+                {
+                    Quantidade = 1;
+                }
+                else
+                {
+                    Quantidade = value;
+                }
+
+            }
+
+        }
+
+
+        public int IdListaPertencente { get; set; }
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public bool Pegou { get; set; }
+        public int Quantidade { get; set; }
 
     }
 }
