@@ -58,6 +58,76 @@
           "lib/MonoAndroid/PCLExt.FileStorage.dll": {}
         }
       },
+      "Plugin.CurrentActivity/2.1.0.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid44/Plugin.CurrentActivity.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid44/Plugin.CurrentActivity.dll": {}
+        }
+      },
+      "Plugin.Permissions/3.0.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.CurrentActivity": "2.1.0.2",
+          "Xamarin.Android.Support.Compat": "25.4.0.2",
+          "Xamarin.Android.Support.Core.Utils": "25.4.0.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid71/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid71/Plugin.Permissions.dll": {}
+        }
+      },
+      "Refractored.FloatingActionButton/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.v7.RecyclerView": "25.4.0.2"
+        },
+        "compile": {
+          "lib/MonoAndroid10/Refractored.Fab.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Refractored.Fab.dll": {}
+        }
+      },
+      "Refractored.FloatingActionButtonForms/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Refractored.FloatingActionButton": "2.1.0",
+          "Xamarin.Forms": "2.4.0.282"
+        },
+        "compile": {
+          "lib/MonoAndroid10/Refractored.FabControl.Droid.dll": {},
+          "lib/MonoAndroid10/Refractored.FabControl.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Refractored.FabControl.Droid.dll": {},
+          "lib/MonoAndroid10/Refractored.FabControl.dll": {}
+        }
+      },
+      "Rg.Plugins.Popup/1.1.4.168": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll": {},
+          "lib/MonoAndroid/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll": {},
+          "lib/MonoAndroid/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.5.166-beta": {
         "type": "package",
         "dependencies": {
@@ -127,6 +197,48 @@
         },
         "runtime": {
           "lib/MonoAndroid/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
+      "Syncfusion.Licensing/16.2.0.42": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfNumericUpDown/16.2.0.42": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "16.2.0.42",
+          "Xamarin.Forms": "2.4.0.280"
+        },
+        "compile": {
+          "lib/MonoAndroid10/Syncfusion.SfNumericUpDown.Android.dll": {},
+          "lib/MonoAndroid10/Syncfusion.SfNumericUpDown.XForms.Android.dll": {},
+          "lib/MonoAndroid10/Syncfusion.SfNumericUpDown.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Syncfusion.SfNumericUpDown.Android.dll": {},
+          "lib/MonoAndroid10/Syncfusion.SfNumericUpDown.XForms.Android.dll": {},
+          "lib/MonoAndroid10/Syncfusion.SfNumericUpDown.XForms.dll": {}
+        }
+      },
+      "Xam.Plugin.Media/4.0.1.4-beta": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "3.0.0.12",
+          "Xamarin.Android.Support.Core.Utils": "25.4.0.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid71/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid71/Plugin.Media.dll": {}
         }
       },
       "Xam.Plugins.Settings/4.0.0.10-beta": {
@@ -487,7 +599,12 @@
           "Acr.UserDialogs": "7.0.1",
           "Newtonsoft.Json": "11.0.2",
           "PCLExt.FileStorage": "1.4.1.1",
+          "Plugin.Permissions": "3.0.0.12",
+          "Refractored.FloatingActionButtonForms": "2.1.0",
+          "Rg.Plugins.Popup": "1.1.4.168",
           "SQLiteNetExtensions": "2.0.0",
+          "Syncfusion.Xamarin.SfNumericUpDown": "16.2.0.42",
+          "Xam.Plugin.Media": "4.0.1.4-beta",
           "Xam.Plugins.Settings": "4.0.0.10-beta",
           "Xamarin.Forms": "3.1.0.637273",
           "sqlite-net-pcl": "1.5.166-beta"
@@ -604,6 +721,97 @@
         "lib/uap10.0/PCLExt.FileStorage.xml",
         "pclext.filestorage.1.4.1.1.nupkg.sha512",
         "pclext.filestorage.nuspec"
+      ]
+    },
+    "Plugin.CurrentActivity/2.1.0.2": {
+      "sha512": "uiMbA0G1ulSEj7MtGUQDDhzw80+QgvH5ts+Yt9cyft1dF4Eb0tYxiXAgNPuohJXpxhZmRs+6ZjL6QBaL/wUKDQ==",
+      "type": "package",
+      "path": "plugin.currentactivity/2.1.0.2",
+      "files": [
+        "lib/monoandroid44/Plugin.CurrentActivity.dll",
+        "lib/monoandroid44/Plugin.CurrentActivity.xml",
+        "plugin.currentactivity.2.1.0.2.nupkg.sha512",
+        "plugin.currentactivity.nuspec",
+        "readme.txt"
+      ]
+    },
+    "Plugin.Permissions/3.0.0.12": {
+      "sha512": "VrYqI/ufk3bH6gTP1JJlLByjhS0CHu3riKmdozhX9/qXA9hlvLolmcqKJdyAqpzmrVC74m3ZtirUBIrBxvT1Lw==",
+      "type": "package",
+      "path": "plugin.permissions/3.0.0.12",
+      "files": [
+        "lib/monoandroid71/Plugin.Permissions.dll",
+        "lib/monoandroid71/Plugin.Permissions.xml",
+        "lib/netstandard1.0/Plugin.Permissions.dll",
+        "lib/netstandard1.0/Plugin.Permissions.xml",
+        "lib/netstandard2.0/Plugin.Permissions.dll",
+        "lib/netstandard2.0/Plugin.Permissions.xml",
+        "lib/uap10.0.10240/Plugin.Permissions.dll",
+        "lib/uap10.0.10240/Plugin.Permissions.pri",
+        "lib/uap10.0.10240/Plugin.Permissions.xml",
+        "lib/xamarinios10/Plugin.Permissions.dll",
+        "lib/xamarinios10/Plugin.Permissions.xml",
+        "plugin.permissions.3.0.0.12.nupkg.sha512",
+        "plugin.permissions.nuspec",
+        "readme.txt"
+      ]
+    },
+    "Refractored.FloatingActionButton/2.1.0": {
+      "sha512": "eT/4xmP50hIm38IqrORreZw0qYsoCCuDiAGVYPstgfAWwzfRthVe0/PlFC6yR4K5TB6dnSA8YZC40o/kQSujwg==",
+      "type": "package",
+      "path": "refractored.floatingactionbutton/2.1.0",
+      "files": [
+        "lib/MonoAndroid10/Refractored.Fab.dll",
+        "lib/MonoAndroid10/Refractored.Fab.pdb",
+        "refractored.floatingactionbutton.2.1.0.nupkg.sha512",
+        "refractored.floatingactionbutton.nuspec"
+      ]
+    },
+    "Refractored.FloatingActionButtonForms/2.1.0": {
+      "sha512": "Uc1P1yNYMr+l7cRosv+2doMqS4VRj2M488NcoPAWAB5Lg9miV8PqfDR0F1CZKwZ42M3biYKO5TdTcjasw5iWZA==",
+      "type": "package",
+      "path": "refractored.floatingactionbuttonforms/2.1.0",
+      "files": [
+        "lib/MonoAndroid10/Refractored.FabControl.Droid.dll",
+        "lib/MonoAndroid10/Refractored.FabControl.Droid.pdb",
+        "lib/MonoAndroid10/Refractored.FabControl.Droid.xml",
+        "lib/MonoAndroid10/Refractored.FabControl.dll",
+        "lib/MonoAndroid10/Refractored.FabControl.pdb",
+        "lib/MonoAndroid10/Refractored.FabControl.xml",
+        "lib/netstandard1.0/Refractored.FabControl.deps.json",
+        "lib/netstandard1.0/Refractored.FabControl.dll",
+        "lib/netstandard1.0/Refractored.FabControl.pdb",
+        "lib/netstandard1.0/Refractored.FabControl.xml",
+        "refractored.floatingactionbuttonforms.2.1.0.nupkg.sha512",
+        "refractored.floatingactionbuttonforms.nuspec"
+      ]
+    },
+    "Rg.Plugins.Popup/1.1.4.168": {
+      "sha512": "pARxyFFrnOoCZfRbAiE8v3+8py/sH5SX8NJAjfaydJJO3cm13yNaNw8EelEONJVQY2T0zFhCfZSc4CDjjaSylQ==",
+      "type": "package",
+      "path": "rg.plugins.popup/1.1.4.168",
+      "files": [
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.pdb",
+        "lib/MonoAndroid/Rg.Plugins.Popup.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.pdb",
+        "lib/MonoTouch/Rg.Plugins.Popup.IOS.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.IOS.pdb",
+        "lib/MonoTouch/Rg.Plugins.Popup.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.pdb",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.pdb",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.pdb",
+        "lib/netstandard1.0/Rg.Plugins.Popup.dll",
+        "lib/netstandard1.0/Rg.Plugins.Popup.pdb",
+        "lib/uap10.0/Rg.Plugins.Popup.UWP.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.UWP.pdb",
+        "lib/uap10.0/Rg.Plugins.Popup.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.pdb",
+        "readme.txt",
+        "rg.plugins.popup.1.1.4.168.nupkg.sha512",
+        "rg.plugins.popup.nuspec"
       ]
     },
     "sqlite-net-pcl/1.5.166-beta": {
@@ -737,6 +945,100 @@
         "lib/MonoAndroid/SQLitePCLRaw.provider.e_sqlite3.dll",
         "sqlitepclraw.provider.e_sqlite3.android.1.1.8.nupkg.sha512",
         "sqlitepclraw.provider.e_sqlite3.android.nuspec"
+      ]
+    },
+    "Syncfusion.Licensing/16.2.0.42": {
+      "sha512": "Bp1HNd2CciLLOoeATC2ybTNtXdRckshmhqpHTCDm4X1Xc0P0p+bkdZW9yGOvkF8s4xdepFTsgH2l7oxjLRiC9w==",
+      "type": "package",
+      "path": "syncfusion.licensing/16.2.0.42",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net20/Syncfusion.Licensing.dll",
+        "lib/net35/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/netstandard1.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.4/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.16.2.0.42.nupkg.sha512",
+        "syncfusion.licensing.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfNumericUpDown/16.2.0.42": {
+      "sha512": "dUT1VxAljP2hL84e73KL9mSRQY/PIvaTB+u6VzZPEYHi9ZkMQ33cdVDEI544TGBbsuRsIb7ZYtC1GhV9IAIN8A==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfnumericupdown/16.2.0.42",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfNumericUpDown.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfNumericUpDown.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfNumericUpDown.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.SfNumericUpDown.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericUpDown.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericUpDown.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericUpDown.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericUpDown.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericUpDown.iOS.xml",
+        "lib/netstandard1.0/Syncfusion.SfNumericUpDown.XForms.dll",
+        "lib/netstandard1.0/Syncfusion.SfNumericUpDown.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfNumericUpDown.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfNumericUpDown.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfInput.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfInput.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/DeviceFamily-Mobile/Themes/InputStyles.xaml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/DeviceFamily-Mobile/Themes/InputStyles.xbf",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Properties/Syncfusion.SfInput.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Syncfusion.SfInput.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Syncfusion.SfInput.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Syncfusion.SfShared.UWP.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/InputStyles.xaml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/InputStyles.xbf",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/generic.xaml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/generic.xbf",
+        "lib/uap10.0/Syncfusion.SfNumericUpDown.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfNumericUpDown.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfNumericUpDown.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfShared.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfShared.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Properties/Syncfusion.SfShared.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Syncfusion.SfShared.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Syncfusion.SfShared.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Themes/generic.xaml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Themes/generic.xbf",
+        "syncfusion.xamarin.sfnumericupdown.16.2.0.42.nupkg.sha512",
+        "syncfusion.xamarin.sfnumericupdown.nuspec"
+      ]
+    },
+    "Xam.Plugin.Media/4.0.1.4-beta": {
+      "sha512": "ubvWtR+wUN67j8kpd7IYIVF9Vta5thJo6Aywhiwqpp8K0B8aLVU3WZgOifou8jSU8d56/BW4d2AE/GSHw8Q2UA==",
+      "type": "package",
+      "path": "xam.plugin.media/4.0.1.4-beta",
+      "files": [
+        "lib/monoandroid71/Plugin.Media.dll",
+        "lib/monoandroid71/Plugin.Media.xml",
+        "lib/netstandard1.0/Plugin.Media.dll",
+        "lib/netstandard1.0/Plugin.Media.xml",
+        "lib/netstandard2.0/Plugin.Media.dll",
+        "lib/netstandard2.0/Plugin.Media.xml",
+        "lib/tizen40/Plugin.Media.dll",
+        "lib/tizen40/Plugin.Media.xml",
+        "lib/uap10.0.10240/Plugin.Media.dll",
+        "lib/uap10.0.10240/Plugin.Media.pri",
+        "lib/uap10.0.10240/Plugin.Media.xml",
+        "lib/xamarinios10/Plugin.Media.dll",
+        "lib/xamarinios10/Plugin.Media.xml",
+        "readme.txt",
+        "xam.plugin.media.4.0.1.4-beta.nupkg.sha512",
+        "xam.plugin.media.nuspec"
       ]
     },
     "Xam.Plugins.Settings/4.0.0.10-beta": {
@@ -1187,7 +1489,12 @@
       "Compras >= 1.0.0",
       "Newtonsoft.Json >= 11.0.2",
       "PCLExt.FileStorage >= 1.4.1.1",
+      "Plugin.Permissions >= 3.0.0.12",
+      "Refractored.FloatingActionButtonForms >= 2.1.0",
+      "Rg.Plugins.Popup >= 1.1.4.168",
       "SQLiteNetExtensions >= 2.0.0",
+      "Syncfusion.Xamarin.SfNumericUpDown >= 16.2.0.42",
+      "Xam.Plugin.Media >= 4.0.1.4-beta",
       "Xam.Plugins.Settings >= 4.0.0.10-beta",
       "Xamarin.Android.Support.Design >= 27.0.2.1",
       "Xamarin.Android.Support.v4 >= 27.0.2.1",
@@ -1220,6 +1527,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1243,9 +1551,29 @@
             "target": "Package",
             "version": "[1.4.1.1, )"
           },
+          "Plugin.Permissions": {
+            "target": "Package",
+            "version": "[3.0.0.12, )"
+          },
+          "Refractored.FloatingActionButtonForms": {
+            "target": "Package",
+            "version": "[2.1.0, )"
+          },
+          "Rg.Plugins.Popup": {
+            "target": "Package",
+            "version": "[1.1.4.168, )"
+          },
           "SQLiteNetExtensions": {
             "target": "Package",
             "version": "[2.0.0, )"
+          },
+          "Syncfusion.Xamarin.SfNumericUpDown": {
+            "target": "Package",
+            "version": "[16.2.0.42, )"
+          },
+          "Xam.Plugin.Media": {
+            "target": "Package",
+            "version": "[4.0.1.4-beta, )"
           },
           "Xam.Plugins.Settings": {
             "target": "Package",

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Compras.PopupEditItem"
+                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:numeric="clr-namespace:Syncfusion.SfNumericUpDown.XForms;assembly=Syncfusion.SfNumericUpDown.XForms">
+    
+    <StackLayout Margin="18"
+               Padding="36"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               HeightRequest="400"
+               WidthRequest="400">
+        <StackLayout BackgroundColor="#666" Orientation="Vertical" Padding="20">
+
+
+            <StackLayout>
+                <Entry Placeholder="" PlaceholderColor="Gray" Text="{Binding  Nome}" TextColor="WhiteSmoke" x:Name="inputName"/>
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+                <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+
+                    <Label Text ="Quantidade" TextColor="WhiteSmoke"  VerticalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="End" VerticalOptions="Center">
+                    <numeric:SfNumericUpDown  Value="{Binding Qnt}" ParsingMode="Decimal" FormatString="n" SpinButtonAlignment="Right" 
+                                             MaximumDecimalDigits="0" Minimum="1"  Watermark="XX" x:Name="quantidade"/>
+
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#666" Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Update" HorizontalOptions="StartAndExpand" BackgroundColor="CornflowerBlue"
+            TextColor="White" FontAttributes="Bold"  Command="{Binding SendToListenerUpdate}" Clicked="UpdClicked"/>
+                <Button Text="Apagar" HorizontalOptions="EndAndExpand" BackgroundColor="#C11"
+            TextColor="White" FontAttributes="Bold"  Command="{Binding DeleteOnListener}" Clicked="DeleteClicked"/>
+            </StackLayout>
+
+        </StackLayout>
+    </StackLayout>
+
+
+
+</pages:PopupPage>

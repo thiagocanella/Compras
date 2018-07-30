@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Compras.Models;
 using Compras.ViewModel;
+using Rg.Plugins.Popup.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,7 +14,6 @@ namespace Compras
 	//[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ListsView : ContentPage 
 	{
-        private int _id = 0;
         public ListsView()
 		{
             
@@ -23,12 +23,25 @@ namespace Compras
             {
                 var item = args.Item as Listas;
                 if (item == null) return;
-                await App.Current.MainPage.Navigation.PushModalAsync(new ItemsView(item));
+                App.Current.MainPage.Navigation.PushModalAsync(new ItemsView(item));
                 listView.SelectedItem = null;
-                _id++;
             };
+
+            FloatingActionButtonAdd.Clicked += async (sender, args) =>
+            {
+
+                await PopupNavigation.Instance.PushAsync(new PopupLista());
+                
+            };
+
+
+
         }
 
+        private async void Cadastro_Clicked(object sender, EventArgs e)
+        {
+            await PopupNavigation.Instance.PushAsync(new PopupLista());
+        }
 
 
 }

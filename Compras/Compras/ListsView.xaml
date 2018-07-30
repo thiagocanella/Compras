@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Compras"
              x:Class="Compras.ListsView"
+             xmlns:fab="clr-namespace:Refractored.FabControl;assembly=Refractored.FabControl"
              Title="Listas de Compras">
 
 
@@ -15,20 +16,44 @@
         </ResourceDictionary>
 
     </ContentPage.Resources>
+
     <StackLayout Padding="20" Spacing="20" BackgroundColor="#333">
 
 
+
+
+        <StackLayout HeightRequest="100" BackgroundColor="#444" Margin="0">
+            <StackLayout Orientation="Horizontal"  >
+                <StackLayout HorizontalOptions="Start" Padding="5" Margin="0">
+                    <Image Source="{Binding User.UrlPhoto}" MinimumHeightRequest="90" MinimumWidthRequest="90" HeightRequest="90" WidthRequest="90" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding PhotoCommand}" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+                <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"  Padding="10,10" Margin="0">
+                    <Label Text="Bem-vindo, " VerticalOptions="Center" FontSize="Small" TextColor="White"/>
+                    <Label Text="{Binding User.Name}" VerticalOptions="Center" FontSize="Medium" TextColor="White" />
+                    <Label Text="{Binding User.Email}" VerticalOptions="Center" FontSize="Small" TextColor="White"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+
+
+
         <ListView x:Name="listView"  ItemsSource="{Binding Listado}" Margin="0,10" >
+
+
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
 
 
-                        <StackLayout BackgroundColor="#444" Orientation="Vertical">
+                        <StackLayout BackgroundColor="#444" Orientation="Vertical" Padding="15,0">
                             <StackLayout Orientation="Horizontal" >
 
                                 <Label Text="{Binding NomeLista}" FontSize="Medium" TextColor="WhiteSmoke" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
-                                <Label HorizontalOptions="End" Text="{Binding Criacao}" VerticalOptions="Center" Margin="10" />
+                                <Label HorizontalOptions="End" Text="{Binding CriacaoFormated}" VerticalOptions="Center" Margin="10" />
 
                             </StackLayout>
                         </StackLayout>
@@ -39,20 +64,21 @@
 
         </ListView>
 
+        <fab:FloatingActionButtonView
+            HorizontalOptions="End" 
+				ImageName="toolbar_add.png"
+				ColorNormal="#C01010"
+				ColorPressed="#C01010"
+				ColorRipple="#C01010"
+				x:Name="FloatingActionButtonAdd"
+				IsVisible="True"
+				AbsoluteLayout.LayoutFlags="PositionProportional"
+				AbsoluteLayout.LayoutBounds="20, 1, AutoSize, AutoSize"
+                Clicked="Cadastro_Clicked"/>
 
 
-        <StackLayout BackgroundColor="#333" Orientation="Vertical">
-
-            <Entry Placeholder="Nova Lista" x:Name="NomeNovoLista" PlaceholderColor="Gray" Text="{Binding NovaLista}" TextColor="WhiteSmoke"/>
-
-            <StackLayout BackgroundColor="#333" Orientation="Horizontal">
-                <Button Text="Add Nova Lista" HorizontalOptions="FillAndExpand" BackgroundColor="CornflowerBlue" 
-                    TextColor="White" FontAttributes="Bold" Command="{Binding AdicionarLista}" IsEnabled="{Binding Source={x:Reference NomeNovoLista}, Path=Text.Length, Converter={StaticResource converter} }"/>
-                    <Button Text="Deletar" HorizontalOptions="End" BackgroundColor="OrangeRed" TextColor="White" FontAttributes="Bold" Command="{Binding RemoverLista}"/>
-            </StackLayout>
-
-        </StackLayout>
 
 
     </StackLayout>
+
 </ContentPage>
